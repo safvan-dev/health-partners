@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthPartners Diagnostics</title>
+
+  <link rel="icon" type="image/x-icon" href="asset/images/HEALTH PARTNERS DIAGNOSTICS logofevicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- icon  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="asset/style.css">
+</head>
+
+<body>
+
+  <!-- header start -->
+
+  <!-- Navbar -->
+  <header class="position-fixed top-0 w-100 z-3">
+    <div class="container">
+
+      <!-- desctop nav -->
+      <div class="desc-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+          <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Logo -->
+            <a class="navbar-brand me-4" href="#">
+              <img src="asset/images/HEALTH PARTNERS DIAGNOSTICS logo.png" alt="HealthPartners Logo"
+                style="height: 50px;">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+              <!-- Centered Menu -->
+              <ul class="navbar-nav me-auto ms-3">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+                <!-- Dropdown on hover -->
+                <li class="nav-item dropdown hover-dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                    data-bs-toggle="dropdown">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li>
+                      <h6 class="dropdown-header text-white">Diagnostics</h6>
+                    </li>
+                    <li><a class="dropdown-item" href="#services">Haematology (Sysmex)</a></li>
+                    <li><a class="dropdown-item" href="#services">Biochemistry (Roche-Hitachi)</a></li>
+                    <li><a class="dropdown-item" href="#services">Hormones (Roche-Hitachi)</a></li>
+                    <li><a class="dropdown-item" href="#services">Microbiology</a></li>
+                    <li><a class="dropdown-item" href="#services">Histopathology</a></li>
+                    <li><a class="dropdown-item" href="#services">Genomics</a></li>
+                    <li>
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item" href="#services">Cardiac: ECG / Echo / TMT</a></li>
+                    <li><a class="dropdown-item" href="#services">Computerized Radiography</a></li>
+                    <li><a class="dropdown-item" href="#services">X-Ray, Ultrasound, Mammography</a></li>
+                    <li><a class="dropdown-item" href="#services">Pulmonary Function Test</a></li>
+                    <li><a class="dropdown-item" href="#services">Executive Health Check-Up</a></li>
+                    <li><a class="dropdown-item" href="#services">Blood Home Collection</a></li>
+                    <li><a class="dropdown-item" href="#services">Nursing Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#services">Department</a></li>
+                <li class="nav-item"><a class="nav-link" href="#package">Package</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+              </ul>
+
+              <!-- Button Right -->
+              <div class="d-flex">
+                <a href="tel:+91 8590016966" class="btn-primary" style="display: inline-flex;">
+                  Schedule an Appointment
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile -nav -->
+      <div class="mobile-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+
+          <!-- Main Navbar: Brand + Toggler -->
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand me-2" href="#">
+              <img src="asset/images/HEALTH PARTNERS DIAGNOSTICS logo.png" alt="HealthPartners Logo"
+                style="height: 50px;">
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainNavbar">
+            <ul class="navbar-nav me-auto ms-lg-3">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown hover-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li>
+                    <h6 class="dropdown-header text-white">Diagnostics</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="#services">Haematology (Sysmex)</a></li>
+                  <li><a class="dropdown-item" href="#services">Biochemistry (Roche-Hitachi)</a></li>
+                  <li><a class="dropdown-item" href="#services">Hormones (Roche-Hitachi)</a></li>
+                  <li><a class="dropdown-item" href="#services">Microbiology</a></li>
+                  <li><a class="dropdown-item" href="#services">Histopathology</a></li>
+                  <li><a class="dropdown-item" href="#services">Genomics</a></li>
+                  <li>
+                    <hr class="dropdown-divider bg-white">
+                  </li>
+                  <li><a class="dropdown-item" href="#services">Cardiac: ECG / Echo / TMT</a></li>
+                  <li><a class="dropdown-item" href="#services">Computerized Radiography</a></li>
+                  <li><a class="dropdown-item" href="#services">X-Ray, Ultrasound, Mammography</a></li>
+                  <li><a class="dropdown-item" href="#services">Pulmonary Function Test</a></li>
+                  <li><a class="dropdown-item" href="#services">Executive Health Check-Up</a></li>
+                  <li><a class="dropdown-item" href="#services">Blood Home Collection</a></li>
+                  <li><a class="dropdown-item" href="#services">Nursing Service</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="#services">Department</a></li>
+              <li class="nav-item"><a class="nav-link" href="#package">Package</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Right Button -->
+            <div class="d-lg-flex justify-content-lg-end">
+              <a href="tel:+91 8590016966" class="btn btn-primary d-block mt-3 mt-lg-0 px-4">
+                Schedule an Appointment <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- header end -->
+
+  <!-- Hero Banner start -->
+
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold">HealthPartners Diagnostics</h1>
+          <p class="lead mb-3">"Welcome to Medicax Medical Clinic, where we are dedicated to revolutionizing the way you
+            healthcare."</p>
+
+          <!-- Stacked content -->
+          <div class="mb-4">
+            <span class="d-block mb-2">Accurate. Reliable. Trusted.</span>
+            <a href="tel:+91 8590016966" class="btn-primary banner-btn" style="display: inline-flex;">
+              Schedule an Appointment
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Banner end -->
+
+  <!-- About Section -->
+
+  <section class="consult-section" id="about">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Right Content - shown first on mobile -->
+
+        <div class="col-md-6 order-1 order-lg-2 right-content">
+          <div class="section-hdng-bx">
+            <h6 class="text-uppercase mb-2">
+              <i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners
+              <span>/ </span> About Us
+            </h6>
+          </div>
+
+          <h2>Your health and <br> happiness are top <br> priorities.</h2>
+          <p class="mt-3">
+            Welcome to the St. Joseph’s Hospital Department, dedicated to delivering specialized and comprehensive
+            healthcare services in a patient-centric environment.
+            Our department is committed to providing top-notch medical care, leveraging cutting-edge technology and a
+            team of skilled professionals.
+          </p>
+          <p>Your health and comfort are our priorities. Thank you for entrusting us with your care.</p>
+
+          <!-- Stats -->
+          <div class="row stats text-center">
+            <div class="col-4 stat-item">
+              <div class="stat-icon"><i class="fas fa-band-aid"></i></div>
+              <h5>25<br><small>Years of Experience</small></h5>
+            </div>
+            <div class="col-4 stat-item">
+              <div class="stat-icon"><i class="fas fa-smile-beam"></i></div>
+              <h5>1000<br><small>Well Smiley Faces</small></h5>
+            </div>
+            <div class="col-4 stat-item">
+              <div class="stat-icon"><i class="fas fa-hand-holding-medical"></i></div>
+              <h5><small>Total <br> Automated Laboratory</small></h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Images - shown second on mobile -->
+
+        <div class="col-md-6 order-2 order-lg-1 right-images position-relative">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="about-pge-img1" data-aos="fade-right" data-aos-offset="300">
+                <img src="asset/images/about-pge-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="about-pge-img2" data-aos="fade-up" data-aos-offset="300">
+                <img src="asset/images/about-pge-img2.jpg" alt="">
+              </div>
+              <div class="about-pge-img3" data-aos="fade-up" data-aos-offset="300">
+                <img src="asset/images/about-pge-img3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Cards -->
+          <div class="floating-card-patients d-flex align-items-center gap-3">
+            <div class="patient-count">
+              <strong>3.5k+</strong><br>
+              <small class="text-muted">Satisfied Patients</small>
+            </div>
+            <div class="patient-images d-flex gap-1">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Patient 1">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Patient 2">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Patient 3">
+            </div>
+          </div>
+
+          <div class="floating-card-doc d-flex align-items-center p-3 rounded">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" width="40" height="40" class="rounded-circle me-2"
+              alt="Dr. Vincent">
+            <div>
+              <strong>Dr. Vincent Chakkilath</strong><br>
+              <small class="text-muted">Senior Orthopedic Consultant</small>
+            </div>
+          </div>
+
+          <div class="floating-card-google d-inline-flex align-items-center p-2 px-3 rounded">
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="20" alt="Google Logo" class="me-2">
+            <div>
+              <strong>4.9</strong>
+              <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section end-->
+
+  <!-- moving text section -->
+
+  <div class="moving-text-box mb-3 ">
+    <span> PREVENTIVE CARE | PATIENT-CENTERED APPROACH | ADVANCED TECHNOLOGY | PREVENTIVE CARE | EXPERIENCED
+      PROFESSIONALS </span>
+  </div>
+
+  <!-- moving text section  end-->
+
+  <!-- Services Section -->
+
+  <section id="services" class="py-5 bg-light" data-aos-duration="1500">
+    <div class="container">
+      <div class="section-hdng-bx" style="display: flex; justify-content: center;">
+        <h6 class="text-uppercase  mb-2"><i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners
+          <span>/ </span> Departments
+        </h6>
+      </div>
+      <h1 data-aos="fade-up" data-aos-offset="300">Our specialized departments
+        work together seamlessly</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+                <img src="asset/images/Haematology.jpeg" class="img-fluid mb-3" alt="Haematology">
+              </div>
+              <h5>Haematology</h5>
+              <p>Advanced blood analysis using Sysmex technology.</p>
+              <a href="#haematology" class="gradient-btn mt-2">
+                Learn More <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+
+                <img src="asset/images/Biochemistry.jpg" class="img-fluid mb-3" alt="Biochemistry">
+              </div>
+              <h5>Biochemistry</h5>
+              <p>Comprehensive metabolic tests using Roche-Hitachi systems.</p>
+              <a href="#haematology" class="gradient-btn mt-2">
+                Learn More <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+
+                <img src="asset/images/Cardiac Investigation.jpeg" class="img-fluid mb-3" alt="Cardiac">
+              </div>
+              <h5>Cardiac Investigation</h5>
+              <p>ECG, Echo, and TMT tests for accurate heart diagnostics.</p>
+              <a href="#haematology" class="gradient-btn mt-2">
+                Learn More <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+                <img src="asset/images/Ultrasound & Doppler.jpeg" class="img-fluid mb-3" alt="Ultrasound">
+              </div>
+              <h5>Ultrasound & Doppler</h5>
+              <p>High-resolution imaging and vascular studies.</p>
+              <a href="#haematology" class="gradient-btn mt-2">
+                Learn More <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+                <img src="asset/images/Mammography.jpg" class="img-fluid mb-3" alt="Mammography">
+              </div>
+              <h5>Mammography</h5>
+              <p>Early detection of breast cancer through imaging.</p>
+              <a href="#haematology" class="gradient-btn mt-2">
+                Learn More <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+                <img src="asset/images/Home Collection.jpg" class="img-fluid mb-3" alt="Home Collection">
+              </div>
+              <h5>Home Collection</h5>
+              <p>Convenient sample collection from your doorstep.</p>
+              <a href="#haematology" class="gradient-btn mt-2">
+                Learn More <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section end-->
+
+  <!-- how to working section start -->
+
+  <section class="how-it-work" data-aos="fade-up" data-aos-offset="300">
+    <!-- <div class="head"> -->
+    <div class="section-hdng-bx" style="display: flex; justify-content: center;">
+      <h6 class="text-uppercase  mb-2"><i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners
+        <span>/ </span> How it works
+      </h6>
+    </div>
+    <h2 data-aos="fade-right" data-aos-offset="300">Discover How HealthPartners Works</h2>
+    <div class="controls">
+      <button id="prev" class="nav-btn" aria-label="Prev">‹</button>
+      <button id="next" class="nav-btn" aria-label="Next">›</button>
+    </div>
+    <!-- </div> -->
+    <div class="slider">
+      <div class="track" id="track">
+
+        <article class="project-card" active>
+          <img class="project-card__bg" src="asset/images/counter.jpg" alt="">
+          <div class="project-card__content">
+            <img class="project-card__thumb" src="asset/images/counter-2.jpg" alt="">
+            <div>
+              <h3 class="project-card__title">Schedule An Appointment</h3>
+              <p class="project-card__desc">Begin your journey to better health by scheduling a consultation with
+                PrimeCare Medical Clinic. You can easily book your appointment by calling our friendly reception team or
+                using our convenient online booking system. We offer flexible appointment times to accommodate your
+                schedule, including evening and appointments for your convenience.</p>
+              <a href="tel:+91 8590016966" class=" project-card__btn">
+                Schedule an Appointment
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <img class="project-card__bg" src="asset/images/counsultation.jpg" alt="">
+          <div class="project-card__content">
+            <img class="project-card__thumb" src="asset/images/counsultation2.jpg" alt="">
+            <div>
+              <h3 class="project-card__title">Consultation</h3>
+              <p class="project-card__desc">Begin your journey to better health by scheduling a consultation with
+                PrimeCare Medical Clinic. You can easily book your appointment by calling our friendly reception team or
+                using our convenient online booking system. We offer flexible appointment times to accommodate your
+                schedule, including evening and appointments for your convenience.</p>
+              <a href="tel:+91 8590016966" class=" project-card__btn">
+                Schedule an Appointment
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <img class="project-card__bg" src="asset/images/tretment.jpg" alt="">
+          <div class="project-card__content">
+            <img class="project-card__thumb" src="asset/images/Home Collection.jpg" alt="">
+            <div>
+              <h3 class="project-card__title">Personalized Treatment</h3>
+              <p class="project-card__desc">Begin your journey to better health by scheduling a consultation with
+                PrimeCare Medical Clinic. You can easily book your appointment by calling our friendly reception team or
+                using our convenient online booking system. We offer flexible appointment times to accommodate your
+                schedule, including evening and appointments for your convenience.</p>
+              <a href="tel:+91 8590016966" class=" project-card__btn">
+                Schedule an Appointment
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <img class="project-card__bg" src="asset/images/going care.jpg" alt="">
+          <div class="project-card__content">
+            <img class="project-card__thumb" src="asset/images/ongoing care2.jpg" alt="">
+            <div>
+              <h3 class="project-card__title">Ongoing Care</h3>
+              <p class="project-card__desc">Begin your journey to better health by scheduling a consultation with
+                PrimeCare Medical Clinic. You can easily book your appointment by calling our friendly reception team or
+                using our convenient online booking system. We offer flexible appointment times to accommodate your
+                schedule, including evening and appointments for your convenience.</p>
+              <a href="tel:+91 8590016966" class=" project-card__btn">
+                Schedule an Appointment
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- how to working section end -->
+
+  <!-- customer -testimonial section start-->
+
+  <section class="testimonial-section-overlay">
+    <div class="testimonial-overlay"></div>
+    <div class="container position-relative">
+      <div class="section-hdng-bx" style="display: flex; justify-content: center;">
+        <h6 class="text-uppercase mb-2">
+          <i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners <span>/ </span> testimonial
+        </h6>
+      </div>
+      <h2 class="section-title">What Our Patients Say</h2>
+      <div class="testimonial-cards">
+        <!-- Card 1 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-offset="300">
+          <div class="testimonial-header">
+            <img src="asset/images/staf2.jpg" alt="User" class="testimonial-img">
+            <div>
+              <h4 class="testimonial-name">Akhil Raj</h4>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">Excellent service and friendly staff. The health check-up process was smooth and
+            results were delivered quickly.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-offset="300">
+          <div class="testimonial-header">
+            <img src="asset/images/staf2.jpg" alt="User" class="testimonial-img">
+            <div>
+              <h4 class="testimonial-name">Dr. Neha Sharma</h4>
+              <div class="testimonial-stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="testimonial-text">Professional diagnostic services with modern equipment. Highly recommended for
+            regular health check-ups.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-offset="300">
+          <div class="testimonial-header">
+            <img src="asset/images/staf2.jpg" alt="User" class="testimonial-img">
+            <div>
+              <h4 class="testimonial-name">Faisal M</h4>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">Got my reports in time, and the home sample collection was very convenient. Clean
+            and safe environment too.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- customer -testimonial section  end-->
+
+  <!-- doctors section start -->
+
+  <section class="team-section py-5" id="team">
+    <div class="container text-center">
+      <div class="section-hdng-bx" style="display: flex; justify-content: center;">
+        <h6 class="text-uppercase  mb-2"><i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners
+          <span>/ </span> Our Team
+        </h6>
+      </div>
+      <h2 class="section-title mb-2">Meet Our Expert</h2>
+      <p class="section-subtitle mb-5">Medical Team</p>
+      <div class="swiper team-slider">
+        <div class="swiper-wrapper">
+          <!-- Doctor Card -->
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-right" data-aos-offset="300">
+              <div class="doctor-img-wrapper">
+                <img src="asset/images/dctr-4.png" alt="Dr. Ayesha" class="doctor-img" />
+              </div>
+              <h5 class="doctor-name mt-3">Dr. Ayesha Khan</h5>
+              <p class="doctor-specialty text-muted">
+                <i class="fas fa-stethoscope me-1 text-primary"></i> Cardiologist
+              </p>
+            </div>
+          </div>
+          <!-- Repeat swiper-slide for other doctors -->
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-right" data-aos-offset="300">
+              <div class="doctor-img-wrapper">
+                <img src="asset/images/dctr-2.png" alt="Dr. Rajesh" class="doctor-img" />
+              </div>
+              <h5 class="doctor-name mt-3">Dr. Rajesh Menon</h5>
+              <p class="doctor-specialty text-muted">
+                <i class="fas fa-stethoscope me-1 text-primary"></i> Orthopedic Surgeon
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-right" data-aos-offset="300">
+              <div class="doctor-img-wrapper">
+                <img src="asset/images/dctr-1.png" alt="Dr. Rajesh" class="doctor-img" />
+              </div>
+              <h5 class="doctor-name mt-3">Dr. Rajesh Menon</h5>
+              <p class="doctor-specialty text-muted">
+                <i class="fas fa-stethoscope me-1 text-primary"></i> Orthopedic Surgeon
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-right" data-aos-offset="300">
+              <div class="doctor-img-wrapper">
+                <img src="asset/images/dctr-3.png" alt="Dr. Rajesh" class="doctor-img" />
+              </div>
+              <h5 class="doctor-name mt-3">Dr. Rajesh Menon</h5>
+              <p class="doctor-specialty text-muted">
+                <i class="fas fa-stethoscope me-1 text-primary"></i> Orthopedic Surgeon
+              </p>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+      <!-- Join Us Section -->
+
+      <div class="join-team-bx">
+        <div class="join-us-section py-5 text-center bg-light">
+          <h3 class="mb-3">Want to be part of our expert team?</h3>
+          <a href="tel:+91 8590016966" class="btn btn-outline-success px-4 py-2 rounded-pill">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- doctors section start end -->
+
+  <!-- / package section start -->
+
+  <section class="package-section" id="package">
+    <div class="container">
+      <div class="row">
+        <div class="package-hdng-bx">
+          <div class="section-hdng-bx">
+            <h6 class="text-uppercase  mb-2"><i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners
+              <span>/ </span> Packages
+            </h6>
+          </div>
+          <h1>Health Packages</h1>
+        </div>
+        <div class="col-md-2">
+          <div class="package-img-bg" data-aos="fade-right" data-aos-offset="300">
+            <img src="asset/images/package.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-10">
+          <main class="packages">
+            <div class="package-card" data-aos="fade-right" data-aos-offset="300">
+              <div>
+                <div class="package-title">ANNUAL VITAL HEALTH CHECK</div>
+                <div class="package-subtitle">Includes 8 tests</div>
+                <div class="test-badges">
+                  <span>GLU...</span><span>CBC...</span><span>TSH...</span><span>LIV...</span><span>+4</span>
+                </div>
+                <div class="price-block"><del>₹3,190</del> <strong>₹749</strong></div>
+              </div>
+              <div class="package-actions">
+                <a href="#"><i class="fas fa-calendar-alt"></i> Call Now</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Enquire Now</a>
+              </div>
+            </div>
+            <div class="package-card" data-aos="fade-right" data-aos-offset="300">
+              <div>
+                <div class="package-title">True Care Shield Package</div>
+                <div class="package-subtitle">Includes 7 tests</div>
+                <div class="test-badges">
+                  <span>CBC...</span><span>TSH...</span><span>LIP...</span><span>LIV...</span><span>+3</span>
+                </div>
+                <div class="price-block"><del>₹2,120</del> <strong>₹1,099</strong></div>
+              </div>
+              <div class="package-actions">
+                <a href="#"><i class="fas fa-calendar-alt"></i> Call Now</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Enquire Now</a>
+              </div>
+            </div>
+            <div class="package-card" data-aos="fade-right" data-aos-offset="300">
+              <div>
+                <div class="package-title">True Care Secure Package</div>
+                <div class="package-subtitle">Includes 8 tests</div>
+                <div class="test-badges">
+                  <span>CBC...</span><span>GLY...</span><span>LIP...</span><span>LIV...</span><span>+4</span>
+                </div>
+                <div class="price-block"><del>₹2,970</del> <strong>₹1,499</strong></div>
+              </div>
+              <div class="package-actions">
+                <a href="#"><i class="fas fa-calendar-alt"></i> Call Now</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Enquire Now</a>
+              </div>
+            </div>
+            <div class="package-card" data-aos="fade-right" data-aos-offset="300">
+              <div>
+                <div class="package-title">True Care Secure Package</div>
+                <div class="package-subtitle">Includes 8 tests</div>
+                <div class="test-badges">
+                  <span>CBC...</span><span>GLY...</span><span>LIP...</span><span>LIV...</span><span>+4</span>
+                </div>
+                <div class="price-block"><del>₹2,970</del> <strong>₹1,499</strong></div>
+              </div>
+              <div class="package-actions">
+                <a href="#"><i class="fas fa-calendar-alt"></i> Call Now</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Enquire Now</a>
+              </div>
+            </div>
+            <div class="package-card" data-aos="fade-right" data-aos-offset="300">
+              <div>
+                <div class="package-title">True Care Secure Package</div>
+                <div class="package-subtitle">Includes 8 tests</div>
+                <div class="test-badges">
+                  <span>CBC...</span><span>GLY...</span><span>LIP...</span><span>LIV...</span><span>+4</span>
+                </div>
+                <div class="price-block"><del>₹2,970</del> <strong>₹1,499</strong></div>
+              </div>
+              <div class="package-actions">
+                <a href="#"><i class="fas fa-calendar-alt"></i> Call Now</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Enquire Now</a>
+              </div>
+            </div>
+            <div class="package-card" data-aos="fade-right" data-aos-offset="300">
+              <div>
+                <div class="package-title">True Care Secure Package</div>
+                <div class="package-subtitle">Includes 8 tests</div>
+                <div class="test-badges">
+                  <span>CBC...</span><span>GLY...</span><span>LIP...</span><span>LIV...</span><span>+4</span>
+                </div>
+                <div class="price-block"><del>₹2,970</del> <strong>₹1,499</strong></div>
+              </div>
+              <div class="package-actions">
+                <a href="#"><i class="fas fa-calendar-alt"></i> Call Now</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Enquire Now</a>
+              </div>
+            </div>
+            <!-- Add more cards similarly -->
+          </main>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- / package section end -->
+
+  <!-- appoinment section start -->
+
+  <section class="appointment-cta" data-aos="fade-up" data-aos-offset="300">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Start Your Journey to<br>Better Health Now</h2>
+          <p>
+            Contact us today to schedule your appointment and embark on<br>
+            your journey to better health.
+          </p>
+          <div class="cta-buttons">
+            <a href="tel:+91 8590016966" class="btn-primary">
+              Schedule an Appointment
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="tel:+91 8590016966" class="btn-call">
+              <i class="fas fa-phone"></i>
+              0484-7180801
+            </a>
+          </div>
+        </div>
+        <div class="cta-image">
+          <img src="asset/images/CUNSOLTING-BOKING-IMG.png" alt="Doctor" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- appoinment section end -->
+
+  <!--contact section -->
+
+  <section class="contact-content container" id="contact">
+    <div class="row g-5">
+      <div class="section-hdng-bx">
+        <h6 class="text-uppercase  mb-2"><i class="fas fa-stethoscope fa-lg text-primary me-2"></i> Health Partners
+          <span>/ </span> Contact Us
+        </h6>
+      </div>
+      <div class="contact-page-text">
+        <div>
+
+          <h4>Taking Your health To Heart</h4>
+          <p>At HealthPartners Diagnostics, your well-being is our priority. Whether you have a question, need to book a
+            test, or want to explore our health check-up packages, we’re here for you—every step of the way. Reach out
+            to us today and let our caring team guide you toward better health, with trust, technology, and a personal
+            touch.</p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong> HealthPartners Diagnostics, Main Road, Kochi, Kerala</p>
+            <p><strong>Phone:</strong> <a href="tel:+91-98765-43210">+91-98765-43210</a></p>
+            <p><strong>Email:</strong> <a href="mailto: info@healthpartnerslab.in">info@healthpartnerslab.in</a></p>
+            <p><strong>Working Hours:</strong><br>Mon - Sat: 7:00 AM – 7:00 PM</p>
+          </div>
+
+          <!-- Google Map -->
+
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15718.015518340711!2d76.29030389830648!3d9.975171042061861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d9.9772047!2d76.2950807!4m5!1s0x3b087397adad1dc3%3A0xf2957bfcdf72f26c!2sHealth%20Partners%20Diagnostics%20Pvt%20Ltd%2CChettichira%2C%20S%2C%20C%20B%2C%20Road%2C%20Vyttila%2C%20Kochi%2C%20Kerala%20682019!3m2!1d9.9729356!2d76.3068539!5e0!3m2!1sen!2sin!4v1753875556577!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-shap-1">
+      <img src="asset/images/Group 11.png" alt="">
+    </div>
+    <div class="bg-shap-2">
+      <img src="asset/images/Group 12.png" alt="">
+    </div>
+  </section>
+
+  <!--contact section end-->
+
+  <!-- Footer -->
+
+  <footer class="footer-section text-white">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Logo & Mission -->
+        <div class="col-md-6">
+          <div class="d-flex align-items-start flex-wrap">
+
+            <!-- Logo on the left -->
+            <div class="footer-logo me-3 mb-3">
+              <img src="asset/images/HEALTH PARTNERS DIAGNOSTICS logo.png" alt="HealthPartners Logo">
+            </div>
+
+            <!-- Description and Form on the right -->
+            <div class="footer-content flex-grow-1">
+              <p class="footer-desc">
+                Our mission is simple yet profound: to empower individuals and families in our community to live
+                healthier,
+                happier lives.
+              </p>
+              <form class="subscribe-form d-flex">
+                <input type="email" placeholder="Enter Your Email" class="form-control me-2" />
+                <button type="submit" class="btn btn-subscribe">
+                  Subscribe Now <i class="fas fa-arrow-right ms-1"></i>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about">About Us</a></li>
+            <li><a href="services">Our Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="package">Packages</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Services -->
+        <div class="col-md-2">
+          <h5 class="footer-heading">Popular Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="services">Cardiology</a></li>
+            <li><a href="services">Pediatrics</a></li>
+            <li><a href="services">Gynaecology</a></li>
+            <li><a href="services">Dermatology</a></li>
+            <li><a href="services">Orthopedics</a></li>
+            <li><a href="services">Psychology</a></li>
+            <li><a href="services">Neurology</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-2">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="list-unstyled contact-info">
+            <li><a href="tel:+91 8590016966"><i class="fas fa-phone-alt me-2"></i> 0484-7180801</a></li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> 421 Allen, Mexico 4233</li>
+            <li><a href="mailto:info@healthpartnerslab.in"></a><i class="fas fa-envelope me-2"></i> medicaxhospital@com
+            </li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- custome-js -->
+  <script src="asset/maine.js"></script>
+</body>
+
+</html>
